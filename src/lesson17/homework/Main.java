@@ -21,6 +21,13 @@ public class Main {
         Coin coin11 = new Coin(5.0, 1850, "Gold", 5);
         Coin coin12 = new Coin(7.5, 1850, "Gold", 20);
 
+        System.out.println("\nЗадание 1.");
+        System.out.println("Отсортировать монеты в виде отдельного класса компаратора:\n" +
+                "по диаметру (от большего к меньшему),\n" +
+                "по году (от меньшего к большему),\n" +
+                "по металлу (по алфавиту от А до Я, от A до Z),\n" +
+                "по номиналу(от меньшего к большему).\n");
+
         Set<Coin> coins1 = new TreeSet<>(new SortByDiameterComparator());
 
         coins1.add(coin1);
@@ -30,15 +37,15 @@ public class Main {
         coins1.add(coin5);
         coins1.add(coin6);
 
-        System.out.println("\nЗадание 1.");
-        System.out.println("Отсортировать монеты в виде отдельного класса компаратора:\n" +
-                "по диаметру (от большего к меньшему),\n" +
-                "по году (от меньшего к большему),\n" +
-                "по металлу (по алфавиту от А до Я, от A до Z),\n" +
-                "по номиналу(от меньшего к большему).\n");
         for (Coin coin : coins1) {
             System.out.println(coin);
         }
+
+        System.out.println("\nЗадание 2.\n" +
+                "Отсортировать монеты в виде анонимного класса-сравнителя:\n" +
+                "по металлу (по алфавиту от Я до А, от Z до A),\n" +
+                "по номиналу (от большего к меньшему),\n" +
+                "по диаметру (от меньшего к большему).\n");
 
         Set<Coin> coins2 = new TreeSet<>(new Comparator<>() {
             @Override
@@ -62,11 +69,6 @@ public class Main {
         coins2.add(coin11);
         coins2.add(coin12);
 
-        System.out.println("\nЗадание 2.\n" +
-                "Отсортировать монеты в виде анонимного класса-сравнителя:\n" +
-                "по металлу (по алфавиту от Я до А, от Z до A),\n" +
-                "по номиналу (от большего к меньшему),\n" +
-                "по диаметру (от меньшего к большему).\n");
         for (Coin coin : coins2) {
             System.out.println(coin);
         }

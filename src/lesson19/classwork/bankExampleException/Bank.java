@@ -1,4 +1,4 @@
-package lesson19.bankExampleException;
+package lesson19.classwork.bankExampleException;
 
 public class Bank {
     int totalAmount = 100;

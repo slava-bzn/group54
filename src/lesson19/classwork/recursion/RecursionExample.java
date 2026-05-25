@@ -1,4 +1,4 @@
-package lesson19.recursion;
+package lesson19.classwork.recursion;
 
 public class RecursionExample {
     public static void main(String[] args) {

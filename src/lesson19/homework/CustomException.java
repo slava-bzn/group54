@@ -1,4 +1,4 @@
-package lesson19.hm;
+package lesson19.homework;
 
 /**
  * Пользовательский класс исключений
@@ -20,5 +20,4 @@ public class CustomException extends Exception {
 	public CustomException(Throwable cause) {
 		super(cause);
 	}
-
 }

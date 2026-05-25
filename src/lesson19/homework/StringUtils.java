@@ -1,4 +1,4 @@
-package lesson19.hm;
+package lesson19.homework;
 
 /**
  * Утильный класс для работы со строками

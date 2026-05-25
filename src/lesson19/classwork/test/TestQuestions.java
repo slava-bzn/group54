@@ -1,4 +1,4 @@
-package lesson19.test;
+package lesson19.classwork.test;
 
 public class TestQuestions {
     /*

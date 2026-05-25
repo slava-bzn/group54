@@ -1,4 +1,4 @@
-package lesson19.exceptions;
+package lesson19.classwork.exceptions;
 
 import java.util.ArrayList;
 import java.util.List;

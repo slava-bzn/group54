@@ -1,6 +1,6 @@
-package lesson19.exceptions;
+package lesson19.classwork.exceptions;
 
-import lesson19.bankExampleException.Bank;
+import lesson19.classwork.bankExampleException.Bank;
 
 public class ThrowExample {
     public static void main(String[] args) {
